@@ -1,0 +1,123 @@
+*{
+  box-sizing:border-box;
+  font-size: 52.6%;
+  font-size: 1.2rem;
+  padding:0;
+  margin:0;
+}
+  
+  .App{
+    width:100%;
+    background-color: #ddd;
+
+    .labels {
+      display:flex;
+      justify-content: space-evenly;
+      align-items:center;
+      margin:5px auto;
+      
+      h2{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:500px;
+        font-size: 1.5rem;
+      }
+
+      h3{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:250px;
+        font-size: 1.5rem;
+      }
+    }
+    nav{
+      width:100%;
+      height:40px;
+      display:flex;
+      justify-content: space-between;
+      padding:5px 10px;
+      align-items:center;
+      background-color: #F5FEFF;
+      .toggle-container{
+        width:250px;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h2{
+          font-size: 1rem;
+        }
+        .dark-mode-toggle{
+          display:flex;
+          align-items: center;
+          justify-content: flex-start;
+          width:100px;
+          background-color:#21212133;
+          border:1px solid #EFE9E544;
+          cursor:pointer;
+        }
+    }
+
+    }
+
+    .player-list{
+      width:100%;
+    }
+
+    .player-card{
+      width:100%;
+      background-color:#fafafa;
+
+      .player-info{
+        display:flex;
+        justify-content: space-evenly;
+        align-items:center;
+        margin:5px auto;
+
+        h2{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          width:500px;
+        }
+
+        h3{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          width:250px;
+        }
+
+      }
+    }
+  }
+
+
+  
+  .dark{
+    .App{
+      background-color: #212121;
+      color:#fff;
+
+      nav{
+        background-color:#3B515B;
+
+        .dark-mode-toggle{
+          display:flex;
+          align-items: center;
+          justify-content: flex-end;
+          width:100px;
+          cursor:pointer;
+        }
+      }
+
+      .player-card{
+        background-color:#0005;
+      }
+    }
+    
+  }
+
+ 

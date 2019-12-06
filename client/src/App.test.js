@@ -1,9 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render, getByTestId, cleanup} from '@testing-library/react';
 import App from './App';
+import NavBar from './components/NavBar';
+import PlayerCard from './components/PlayerCard';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+
+afterEach(cleanup);
+
+test('renders app without crashing', () =>{
+  render(<App />)
+});
+
+test('renders navbar without crashing', () =>{
+  render(<NavBar />)
+});
+
+test('renders playercard without crashing', () =>{
+  render(<PlayerCard />)
+});
+
+test('test contains player list', () =>{
+  {getByTestId}('player-list');
 });
